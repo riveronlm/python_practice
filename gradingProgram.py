@@ -20,4 +20,22 @@ for student in student_scores:
     else:
         student_grades[student] = "Fail"
         
-print(student_grades)                
+print(student_grades) 
+
+#Nesting Dictionary in a Dictionary
+travel_log = {
+    "Panama":{"cities_visited" : ["Panama","Santiago","Chiriqui","Darien","Bocas Del Toro"],"total_visits": 10},
+    "Puerto Rico":{"cities_visited":["Bayamon","Caguas","Yauco","Ponce","Rincon"],"total_visits": 0}
+}
+
+print(travel_log["Panama"]) 
+
+#Nesting Dictionary in a List
+travel_log = [
+    {"country": "Panama",
+     "cities_visited" : ["Panama","Santiago","Chiriqui","Darien","Bocas Del Toro"],
+     "total_visits": 10},
+    {"country": "Puerto  Rico",
+     "cities_visited":["Bayamon","Caguas","Yauco","Ponce","Rincon"],
+     "total_visits": 0},
+]         
